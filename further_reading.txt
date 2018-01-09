@@ -1,0 +1,19 @@
+Intro into Writing PostgreSQL Functions in C from 2007
+https://linuxgazette.net/139/peterson.html
+
+Intro into writing postgres extension in four parts
+http://big-elephants.com/2015-10/writing-postgres-extensions-part-i/
+
+Overview about memory contextx
+https://blog.pgaddict.com/posts/introduction-to-memory-contexts
+
+Postgres documentation on:
+
+C-Language Functions
+https://www.postgresql.org/docs/current/static/xfunc-c.html
+
+Extension Building Infrastructure
+https://www.postgresql.org/docs/current/static/extend-pgxs.html
+
+Packaging Related Objects into an Extension
+https://www.postgresql.org/docs/current/static/extend-extensions.html

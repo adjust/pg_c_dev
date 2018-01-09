@@ -1,0 +1,70 @@
+\x
+SELECT * FROM get_func('numeric_div');
+-[ RECORD 1 ]-------+-----------------------------
+Name                | numeric_div
+Result data type    | numeric
+Argument data types | numeric, numeric
+Type                | normal
+Volatility          | immutable
+Language            | internal
+Source code         | numeric_div
+Description         | implementation of / operator
+
+SELECT * FROM get_type('integer');
+-[ RECORD 1 ]--+---------
+Name           | integer
+internal Name  | int4
+internallength | 4
+input          | int4in
+output         | int4out
+receive        | int4recv
+send           | int4send
+typmod_in      | -
+typmod_out     | -
+ANALYZE        | -
+category       | N
+preferred      | false
+delimiter      | ,
+passedbyvalue  | true
+alignment      | int4
+storage        | plain
+collatable     | false
+DEFAULT        | 
+
+SELECT * FROM get_agg('avg','integer');
+-[ RECORD 1 ]----+-------------------
+sfunc            | int4_avg_accum
+finalfunc        | int8_avg
+stype            | bigint[]
+combinefunc      | int4_avg_combine
+serialfunc       | -
+deserialfunc     | -
+msfunc           | int4_avg_accum
+minvfunc         | int4_avg_accum_inv
+mfinalfunc       | int8_avg
+mstype           | bigint[]
+finalfunc_extra  | false
+mfinalfunc_extra | false
+sortop           | 0
+hypothetical     | false
+sspace           | 0
+initcond         | {0,0}
+msspace          | 
+minitcond        | {0,0}
+funcargs         | integer
+funciargs        | integer
+parallel         | PARALLEL SAFE
+
+SELECT * FROM get_op('/','integer', 'integer');
+-[ RECORD 1 ]------------------------
+oprkind    | both
+source     | int4div(integer,integer)
+leftarg    | integer
+rightarg   | integer
+commutator | 0
+negator    | 0
+restrict   | -
+join       | -
+merges     | false
+hashes     | false
+

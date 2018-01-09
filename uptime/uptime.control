@@ -1,0 +1,5 @@
+# uptime extension
+comment = 'Server uptime analytics'
+default_version = '0.0.1'
+relocatable = true
+requires = ''
